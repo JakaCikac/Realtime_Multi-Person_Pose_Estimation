@@ -56,10 +56,10 @@ DEFINE_int32(camera,                0,              "The camera index for VideoC
 DEFINE_string(video,                "",             "Use a video file instead of the camera.");
 DEFINE_string(image_dir,            "",             "Process a directory of images.");
 DEFINE_int32(start_frame,           0,              "Skip to frame # of video");
-DEFINE_string(caffemodel, "model/coco/pose_iter_440000.caffemodel", "Caffe model.");
-DEFINE_string(caffeproto, "model/coco/pose_deploy_linevec.prototxt", "Caffe deploy prototxt.");
-// DEFINE_string(caffemodel, "model/mpi/pose_iter_160000.caffemodel", "Caffe model.");
-// DEFINE_string(caffeproto, "model/mpi/pose_deploy_linevec.prototxt", "Caffe deploy prototxt.");
+//DEFINE_string(caffemodel, "model/coco/pose_iter_440000.caffemodel", "Caffe model.");
+//DEFINE_string(caffeproto, "model/coco/pose_deploy_linevec.prototxt", "Caffe deploy prototxt.");
+DEFINE_string(caffemodel, "model/mpi/pose_iter_160000.caffemodel", "Caffe model.");
+DEFINE_string(caffeproto, "model/mpi/pose_deploy_linevec.prototxt", "Caffe deploy prototxt.");
 DEFINE_string(resolution,           "1280x720",     "The image resolution (display).");
 DEFINE_string(net_resolution,       "656x368",      "Multiples of 16.");
 DEFINE_string(camera_resolution,    "1280x720",     "Size of the camera frames to ask for.");
