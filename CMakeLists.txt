@@ -31,7 +31,7 @@ caffe_option(USE_CUDNN "Build Caffe with cuDNN library support" ON IF NOT CPU_ON
 caffe_option(BUILD_SHARED_LIBS "Build shared libraries" ON)
 caffe_option(BUILD_python "Build Python wrapper" ON)
 set(python_version "2" CACHE STRING "Specify which Python version to use")
-caffe_option(BUILD_matlab "Build Matlab wrapper" OFF IF UNIX OR APPLE)
+caffe_option(BUILD_matlab "Build Matlab wrapper" ON IF UNIX OR APPLE)
 caffe_option(BUILD_docs   "Build documentation" ON IF UNIX OR APPLE)
 caffe_option(BUILD_python_layer "Build the Caffe Python layer" ON)
 caffe_option(USE_OPENCV "Build with OpenCV support" ON)
@@ -70,6 +70,7 @@ include_directories(BEFORE src) # This is needed for gtest.
 # ---[ Subdirectories
 add_subdirectory(src/gtest)
 add_subdirectory(src/caffe)
+#add_subdirectory(src/rtpose)
 add_subdirectory(tools)
 add_subdirectory(examples)
 add_subdirectory(python)
